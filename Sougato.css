@@ -1,0 +1,258 @@
+
+/* =================================
+   SOUGATO PATRA - CLOUD RESUME
+   Modern Professional Portfolio
+================================= */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fc;
+    color: #334155;
+    line-height: 1.7;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 90px 20px 85px;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+    color: #dbeafe;
+    margin-bottom: 8px;
+}
+
+header p:first-of-type {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 11px 22px;
+    margin: 12px 5px 0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+header a:hover {
+    background: white;
+    color: #1d4ed8;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Sections */
+section {
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 35px 40px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(15, 23, 42, 0.06);
+    border: 1px solid #e8edf5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.09);
+}
+
+/* Section Headings */
+section h2 {
+    color: #1e3a8a;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #dbeafe;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 3px;
+    background: #2563eb;
+    bottom: -2px;
+    left: 0;
+    border-radius: 5px;
+}
+
+/* Paragraphs */
+section p {
+    font-size: 15px;
+    color: #64748b;
+    margin-bottom: 12px;
+}
+
+/* Subheadings */
+section h3 {
+    font-size: 18px;
+    color: #0f172a;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* Technical Skills */
+section ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+section ul li {
+    background: #eff6ff;
+    padding: 13px 18px;
+    border-left: 4px solid #2563eb;
+    border-radius: 7px;
+    font-size: 14px;
+    color: #1e40af;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+section ul li:hover {
+    background: #dbeafe;
+    transform: translateX(6px);
+}
+
+/* Projects */
+section h3 + p {
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+section:last-of-type p {
+    background: #f8fafc;
+    padding: 12px 15px;
+    border-radius: 7px;
+    border-left: 3px solid #2563eb;
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+footer {
+    background: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 28px 15px;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+#visitor-count {
+    color: #60a5fa;
+    font-weight: 700;
+}
+
+/* Selection */
+::selection {
+    background: #2563eb;
+    color: white;
+}
+
+/* Responsive Design - Tablets */
+@media (max-width: 768px) {
+
+    header {
+        padding: 65px 15px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    section {
+        margin: 22px 15px;
+        padding: 25px 22px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    section ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p:first-of-type {
+        font-size: 16px;
+    }
+
+    header a {
+        padding: 9px 13px;
+        font-size: 12px;
+        margin: 7px 3px;
+    }
+
+    section {
+        margin: 18px 12px;
+        padding: 22px 18px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    section h3 {
+        font-size: 16px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 22px 10px;
+    }
+}
